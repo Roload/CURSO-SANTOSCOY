@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+
+<body>
+    
+ <header>
+    
+    <h1>¡Registrate a los talleres!</h1>
+    
+ </header>   
+ 
+ <section id="FORMULARIOS">
+    
+    <form action="/search">
+       
+        <div id="Nombre y Apellido">
+            <label for="Nom">Nombre</label>
+                <input type="text" placeholder="Nombre" id="Nom" name="Nomb" required>
+
+            <label for="Apll">Apellido</label>
+                <input type="text" placeholder="Apellido" id="Apll" name="Aplld" required> 
+
+        </div>
+            
+            <br>
+
+        <div id="Selección de Carrera">
+
+            <label for="lista">Selecciona tu carrera</label>
+                <select name="carreras" id="lista">
+
+                    <option value="1">Ingeniería Civil</option>
+                    <option value="2" selected>Ingeniería Física</option>
+                    <option value="3">Ingeniería Mecatrónica</option>
+
+                </select>
+
+
+        </div>
+
+        <div id="Taller">
+           
+            <p> Taller al que quieres inscribiste:</p>
+                
+                <div>
+                    <input type="radio" name="taller" value="Herramientas de software" id="hs">
+                        <label for="hs">Herramientas de software</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="taller" value="Japones" id="jp">
+                        <label for="jp">Japones</label>
+                </div>
+                   
+                <div>
+                    <input type="radio" name="taller" value="Introducción al desarrollo web" id="idw">
+                        <label for="idw">Introduccion al desarrollo web</label>
+                </div>
+                   
+
+        </div>
+
+            <br>
+
+        <div id="Email and password">
+            
+            <div>
+                <label for="email">Email</label>
+                    <input type="email" placeholder="Email" name="eml" id="email">
+
+                <label for="password">Password</label>
+                    <input type="password" placeholder="Password" name="pss" id="password">
+            </div>
+
+            <div>
+
+                <br>
+                    <button type="submit">Registrarse</button>
+
+            </div>
+        </div>
+
+    </form>
+
+
+
+ </section>
+
+
+</body>
+
+
+
+</html>

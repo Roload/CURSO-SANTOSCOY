@@ -1,0 +1,137 @@
+h1{
+    color:purple;
+    background-color: powderblue;
+    /*width: 200px;
+    height: 200px;*/
+    padding:30px;
+    border: red dashed 5px;
+    /*border: color tipo tamaño;*/
+    border-left: 5px solid blue;
+    /*Modifando bordes de los lados*/
+    border-radius: 5%;
+    /*border-radius: le puedes dar valores en pixeles o porcentajes*/
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+/*
+borde del contenido primero
+padding: sigue adentro del cuadro, pero no tiene contenido. Distancia desde el borde al contenido.
+border: es el margen que va después del padding, un poco más pequeño. Propiedades: solid, dashed, etc.
+margin: parte más exterior de la caja
+
+*/
+
+.primertitulo{
+    color:purple;
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-decoration: yellow underline wavy;
+    font-size: 50px;
+}
+
+button{
+    background-color: orange;
+}
+
+body{
+    background-color: rgb(255, 200, 200);
+    font-family: Didot, Arial, sans-serif;
+    margin: 0;
+}
+
+#primero{
+    background-color: blueviolet;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#segundo{
+    background-color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: purple;
+    text-transform: uppercase;
+}
+
+#tercero{
+    color: rgb(255, 255, 0);
+}
+
+p{
+    text-align: justify;
+}
+
+.bienvenida{
+    background-color: green;
+}
+
+.usuario{
+    background-color: cadetblue;
+}
+
+p a{
+    background-color: #f00;
+}
+
+section > ul{
+    color: blue;
+}
+
+input[type="text"]{
+    background-color: yellow;
+}
+
+a[href="http//wwww.google.com"]{
+    color:blue;
+}
+
+
+/*Pseudoclases*/
+
+button:hover{
+  background-color: chartreuse;
+}/*:hover hace que los botones cambien de color con el mouse encima*/
+
+button:active{
+    background-color: #900;
+}/*actuve hace que el boton cambie de color cuando se activa*/
+
+#personas li:nth-of-type(2n-1){
+    background-color:deeppink;
+}/*li se refiere al elemento en la lista y nth-of-type() se refiere a la persona que deseo y sí le pongo (N°n) lo hará cada determiando número de personas*/
+
+#personas li:nth-of-type(2n){
+    background-color: forestgreen;
+}
+
+p::first-letter{
+    font-size: 40px;
+}/*Primera letra más grande*/
+
+p::first-line{
+    font-size: 40px;
+}/*Primera linea más grande*/
+
+p::selection{
+    background-color: gold;
+    color: firebrick;
+}/*Lo que se selecciona se hace de otro color en lugar del tipico color azul*/
+
+
+/*DISPLAY*/
+input{
+    display: block;
+}
+
+li{
+    display:inline;
+}/*Display modifica el formato de la caja*/
+
+#spansegundo{
+    background-color: peru;
+    width: 400px;
+    height: 100px;
+    display: inline-block;
+}
